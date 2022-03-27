@@ -1,5 +1,17 @@
 # FILM: Following Instructions in Language with Modular Methods
 
+
+```
+conda create --name FILM_test_env  python=3.6
+conda activate FILM_test_env
+conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+conda install ipykernel
+conda install matplotlib   
+conda install -c anaconda scikit-learn
+conda install -c conda-forge opencv
+#if the above command does not work then try:
+pip install opencv-python 
+```
 [FILM: Following Instructions in Language with Modular Methods](https://arxiv.org/abs/2110.07342)<br />
 So Yeon Min, Devendra Singh Chaplot, Pradeep Ravikumar, Yonatan Bisk, Ruslan Salakhutdinov<br />
 Carnegie Mellon University, Facebook AI Research
