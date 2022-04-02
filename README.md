@@ -11,6 +11,8 @@ conda install -c anaconda scikit-learn
 conda install -c conda-forge opencv
 #if the above command does not work then try:
 pip install opencv-python 
+pip install torch==1.6.0 torchvision==0.7.0
+
 ```
 [FILM: Following Instructions in Language with Modular Methods](https://arxiv.org/abs/2110.07342)<br />
 So Yeon Min, Devendra Singh Chaplot, Pradeep Ravikumar, Yonatan Bisk, Ruslan Salakhutdinov<br />
