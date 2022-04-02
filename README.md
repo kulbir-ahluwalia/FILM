@@ -114,6 +114,7 @@ $ ln -s $ALFRED_ROOT/data/json_2.1.0 $FILM/alfred_data_all
 
 ## Download Trained models
 0. Download "Pretrained_Models_FILM" from [this link](https://drive.google.com/file/d/1mkypSblrc0U3k3kGcuPzVOaY1Rt9Lqpa/view?usp=sharing)
+1. unzip the folder and take out the film folder
 
 1. Semantic segmentation
 
@@ -138,7 +139,9 @@ mv Pretrained_Models_FILM/best_model_multi.pt models/semantic_policy/best_model_
 To use a better perfoming model trained with a new seed (27.80%),
 
 ```
-mv Pretrained_Models_FILM/best_model_multi.pt models/semantic_policy/new_best_model.pt
+mv Pretrained_Models_FILM/new_best_model.pt models/semantic_policy/new_best_model.pt
+
+# mv Pretrained_Models_FILM/best_model_multi.pt models/semantic_policy/new_best_model.pt
 ```
 
 ## Run FILM on Valid/ Tests Sets
