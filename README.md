@@ -19,6 +19,7 @@ python3 -m pip install --upgrade --user urllib3==1.25.9
 python3 -m pip install --upgrade --user gym==0.10.5
 python -m pip install -U scikit-image
 
+pip install django-model-utils
 
 pip install scikit-fmm
 
