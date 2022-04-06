@@ -18,6 +18,16 @@ python3 -m pip install --upgrade --user gym==0.10.5
 
 
 ```
+
+Installing the correct version of pytorch and cuda: https://gist.github.com/p1nox/f7b0d8ae415f14d235cb14359b48857e
+
+```
+ conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c nvidia    
+
+
+```
+
+
 [FILM: Following Instructions in Language with Modular Methods](https://arxiv.org/abs/2110.07342)<br />
 So Yeon Min, Devendra Singh Chaplot, Pradeep Ravikumar, Yonatan Bisk, Ruslan Salakhutdinov<br />
 Carnegie Mellon University, Facebook AI Research
