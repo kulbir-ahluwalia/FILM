@@ -4,7 +4,9 @@
 ```
 conda create --name FILM_test_env  python=3.6
 conda activate FILM_test_env
-conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c nvidia    
+
+
 conda install ipykernel
 conda install matplotlib   
 conda install -c anaconda scikit-learn
@@ -25,6 +27,16 @@ Installing the correct version of pytorch and cuda: https://gist.github.com/p1no
  conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c nvidia    
 
 
+```
+
+To deactivate the env:
+```
+conda deactivate
+```
+
+TO delete it:
+```
+conda env remove -n FILM_test_env
 ```
 
 
