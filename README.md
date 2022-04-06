@@ -13,11 +13,17 @@ conda install -c anaconda scikit-learn
 conda install -c conda-forge opencv
 #if the above command does not work then try:
 pip install opencv-python 
-pip install torch==1.6.0 torchvision==0.7.0
+########pip install torch==1.6.0 torchvision==0.7.0
 pip install urllib3
 python3 -m pip install --upgrade --user urllib3==1.25.9
 python3 -m pip install --upgrade --user gym==0.10.5
+python -m pip install -U scikit-image
 
+
+pip install scikit-fmm
+
+pip install ai2thor
+conda install -c conda-forge quaternion
 
 ```
 
