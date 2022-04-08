@@ -8,6 +8,8 @@ conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c nvid
 
 
 conda install ipykernel
+conda install -c conda-forge ipywidgets
+
 conda install matplotlib   
 conda install -c anaconda scikit-learn
 conda install -c conda-forge opencv
