@@ -152,7 +152,8 @@ $ export ALFRED_ROOT=$(pwd)/alfred
 ```
 
 * Now run
-```
+```mv Pretrained_Models_FILM/best_model_multi.pt models/semantic_policy/new_best_model.pt
+
 $ cd $ALFRED_ROOT
 $ python models/train/train_seq2seq.py --data data/json_feat_2.1.0 --model seq2seq_im_mask --dout exp/model:{model},name:pm_and_subgoals_01 --splits data/splits/oct21.json --gpu --batch 8 --pm_aux_loss_wt 0.1 --subgoal_aux_loss_wt 0.1 --preprocess
 ```
@@ -169,6 +170,8 @@ $ cd $FILM
 $ mkdir alfred_data_all 
 $ ln -s $ALFRED_ROOT/data/json_2.1.0 $FILM/alfred_data_all
 ```
+
+parser.add_argument('--x_display', type=str, default='0')
 
 ## Download Trained models
 0. Download "Pretrained_Models_FILM" from [this link](https://drive.google.com/file/d/1mkypSblrc0U3k3kGcuPzVOaY1Rt9Lqpa/view?usp=sharing)
