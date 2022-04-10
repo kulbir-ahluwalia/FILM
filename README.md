@@ -171,7 +171,16 @@ $ mkdir alfred_data_all
 $ ln -s $ALFRED_ROOT/data/json_2.1.0 $FILM/alfred_data_all
 ```
 
+
+In arguments.py:
+```
 parser.add_argument('--x_display', type=str, default='0')
+```
+
+In thor_env_code change:
+```
+self.depth_gpu = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+```
 
 ## Download Trained models
 0. Download "Pretrained_Models_FILM" from [this link](https://drive.google.com/file/d/1mkypSblrc0U3k3kGcuPzVOaY1Rt9Lqpa/view?usp=sharing)
