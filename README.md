@@ -32,6 +32,23 @@ Old commands which do not work:
 ########pip install torch==1.6.0 torchvision==0.7.0
 
 ```
+Install ninja and detectron2:
+```
+conda install -c conda-forge ninja 
+python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
+
+```
+
+-Install habitat lab in your conda environment. 
+We use an earlier version of [habitat-lab](https://github.com/facebookresearch/habitat-lab) as specified below:
+
+Installing habitat-lab:
+```
+git clone https://github.com/facebookresearch/habitat-lab.git
+cd habitat-lab; git checkout tags/v0.1.5; 
+pip install -e .
+```
+
 Installing the correct version of pytorch and cuda: https://gist.github.com/p1nox/f7b0d8ae415f14d235cb14359b48857e
 
 ```
@@ -70,14 +87,7 @@ We will also provide docker and singularity setup; see [here](https://github.com
 $ pip install -r requirements.txt
 ```
 
-- We use an earlier version of [habitat-lab](https://github.com/facebookresearch/habitat-lab) as specified below:
 
-Installing habitat-lab:
-```
-git clone https://github.com/facebookresearch/habitat-lab.git
-cd habitat-lab; git checkout tags/v0.1.5; 
-pip install -e .
-```
 
 - Install [pytorch](https://pytorch.org/) according to your system configuration. The code is tested on pytorch v1.6.0 and cudatoolkit v10.2. If you are using conda:
 ```
