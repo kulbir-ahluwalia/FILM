@@ -7,6 +7,7 @@ conda activate FILM_test_env
 conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c nvidia    
 
 pip install networkx
+conda install numba
 conda install ipykernel
 conda install matplotlib   
 conda install -c anaconda scikit-learn
@@ -21,10 +22,20 @@ pip install Jinja2
 pip install django-model-utils
 pip install ai2thor==3.5.0  
 pip install scikit-fmm
-python3 -m pip install --upgrade --user gym==0.17.2 
+python3 -m pip install --upgrade --user gym==0.10.9 
 pip install ai2thor
 conda install -c conda-forge quaternion
 
+```
+
+Update the requirements.txt with the following:
+```angular2html
+torch==1.10.2
+torchvision==0.11.3
+torchaudio==0.10.2+cu113
+tensorboardX==2.8.0
+ai2thor==3.5.0
+gym==0.17.2
 ```
 Old commands which do not work:
 ```angular2html

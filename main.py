@@ -100,7 +100,8 @@ def main():
         remainder = e % args.num_processes
         num_episodes[remainder] +=1
     
-    device = args.device = torch.device("cuda:" + args.which_gpu if args.cuda else "cpu")
+    # device = args.device = torch.device("cuda:" + args.which_gpu if args.cuda else "cpu")
+    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     if args.use_sem_policy:
         Unet_model = UNetMulti((240,240), num_sem_categories=24).to(device=device)
         sd = torch.load('models/semantic_policy/best_model_multi.pt', map_location = device)

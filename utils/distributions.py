@@ -31,8 +31,8 @@ FixedNormal.entropy = lambda self: entropy(self).sum(-1)
 
 FixedNormal.mode = lambda self: self.mean
 args = get_args()
-device = torch.device("cuda:" + args.which_gpu if args.cuda else "cpu")
-
+# device = torch.device("cuda:" + args.which_gpu if args.cuda else "cpu")
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 class Categorical(nn.Module):
 
     def __init__(self, num_inputs, num_outputs):
