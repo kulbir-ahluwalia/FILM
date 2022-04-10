@@ -210,6 +210,8 @@ mv Pretrained_Models_FILM/new_best_model.pt models/semantic_policy/new_best_mode
 **Caveat**: Multiprocessing (using --num_processes > 1) will make the construction of semantic mapping slower. We recommend that you use "--num_processes 2" (or a number around 2) and just run several jobs. (E.g. one job with episodes from 0 to 200, another job with episodes from 200 to 400, etc)
 
 **On your laptop (use learned depth and learned segmentation):** 
+In arguments.py change the line to default='1.0' : 
+parser.add_argument('--x_display', type=str, default='1.0')
 ```
 $ python main.py  -n1 --max_episode_length 1000 --num_local_steps 25  --num_processes 2 --eval_split tests_unseen --from_idx 0 --to_idx 120 --max_fails 10    --debug_local   --learned_depth  --use_sem_seg --set_dn first_run   --use_sem_policy  --save_pictures -v 1
 ```
