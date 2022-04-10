@@ -6,30 +6,32 @@ conda create --name FILM_test_env  python=3.6
 conda activate FILM_test_env
 conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c nvidia    
 
-
+pip install networkx
 conda install ipykernel
-conda install -c conda-forge ipywidgets
-
 conda install matplotlib   
 conda install -c anaconda scikit-learn
 conda install -c conda-forge opencv
 #if the above command does not work then try:
 pip install opencv-python 
-########pip install torch==1.6.0 torchvision==0.7.0
 pip install urllib3
 python3 -m pip install --upgrade --user urllib3==1.25.9
-python3 -m pip install --upgrade --user gym==0.10.5
 python -m pip install -U scikit-image
-
+conda install -c conda-forge ipywidgets
+pip install Jinja2
 pip install django-model-utils
-
+pip install ai2thor==3.5.0  
 pip install scikit-fmm
-
+python3 -m pip install --upgrade --user gym==0.17.2 
 pip install ai2thor
 conda install -c conda-forge quaternion
 
 ```
+Old commands which do not work:
+```angular2html
+#python3 -m pip install --upgrade --user gym==0.10.5
+########pip install torch==1.6.0 torchvision==0.7.0
 
+```
 Installing the correct version of pytorch and cuda: https://gist.github.com/p1nox/f7b0d8ae415f14d235cb14359b48857e
 
 ```
