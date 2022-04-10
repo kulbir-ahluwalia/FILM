@@ -10,7 +10,8 @@ Pillow
 torch==1.6.0
 torchvision
 tensorboardX==1.8
-ai2thor==2.1.0
+ai2thor==3.5.0
+gym==0.17.2
 matplotlib
 tensorboard
 seaborn==0.9.0
