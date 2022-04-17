@@ -231,6 +231,13 @@ For example, to use ground truth depth and learned segmentation, run the above c
 ```
 $ python main.py  -n1 --max_episode_length 1000 --num_local_steps 25  --num_processes 2 --eval_split tests_unseen --from_idx 0 --to_idx 120 --max_fails 10   --debug_local  --use_sem_seg --set_dn first_run   --use_sem_policy  --save_pictures -v 1
 ```
+In sem_mapping.py,
+use:
+```
+# self.device = args.device
+
+self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+```
 
 
 **On a headless machine with gpu:**
