@@ -37,6 +37,13 @@ tensorboardX==2.8.0
 ai2thor==3.5.0
 gym==0.17.2
 ```
+
+For the FILM modified for teach use:
+```
+gym==0.15.7
+ai2thor==3.1.0
+```
+
 Old commands which do not work:
 ```angular2html
 #python3 -m pip install --upgrade --user gym==0.10.5
